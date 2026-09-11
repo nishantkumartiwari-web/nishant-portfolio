@@ -1,93 +1,76 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <h2>Nishant</h2>
 
-  <!-- Navigation -->
-  <nav>
-    <h2>Nishant</h2>
-
-    <div>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </nav>
-
-  <!-- About -->
-  <section id="about">
-    <h1>Hello, I'm Nishant</h1>
-    <p>
-      I am a Software Developer interested in building
-      simple and user-friendly web applications.
-    </p>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <h2>My Projects</h2>
-
-    <div class="projects">
-
-      <div class="card">
-        <h3>Todo App</h3>
-        <p>A simple Todo application using JavaScript.</p>
-        <!-- <button>View Project</button> -->
+      <div>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
       </div>
+    </nav>
 
-      <div class="card">
-        <h3>Portfolio</h3>
-        <p>A responsive portfolio website.</p>
-        <!-- <button>View Project</button> -->
+    <!-- About -->
+    <section id="about">
+      <h1>Hello, I'm Nishant</h1>
+      <p>
+        I am a Software Developer interested in building simple and
+        user-friendly web applications.
+      </p>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+      <h2>My Projects</h2>
+
+      <div class="projects">
+        <div class="card">
+          <h3>Todo App</h3>
+          <p>A simple Todo application using JavaScript.</p>
+          <!-- <button>View Project</button> -->
+        </div>
+
+        <div class="card">
+          <h3>Portfolio</h3>
+          <p>A responsive portfolio website.</p>
+          <!-- <button>View Project</button> -->
+        </div>
+
+        <div class="card">
+          <h3>Weather App</h3>
+          <p>A simple weather application.</p>
+          <!-- <button>View Project</button> -->
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Weather App</h3>
-        <p>A simple weather application.</p>
-        <!-- <button>View Project</button> -->
-      </div>
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
 
-    </div>
-  </section>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" />
 
-  <!-- Contact -->
-  <section id="contact">
-    <h2>Contact Me</h2>
+        <input type="email" id="email" placeholder="Your Email" />
 
-    <form id="contactForm">
+        <textarea id="message" placeholder="Your Message"></textarea>
 
-      <input
-        type="text"
-        id="name"
-        placeholder="Your Name"
-      >
+        <button type="submit">Send Message</button>
 
-      <input
-        type="email"
-        id="email"
-        placeholder="Your Email"
-      >
+        <p id="error"></p>
+        <p id="success"></p>
+      </form>
+    </section>
 
-      <textarea
-        id="message"
-        placeholder="Your Message"
-      ></textarea>
-
-      <button type="submit">Send Message</button>
-
-      <p id="error"></p>
-      <p id="success"></p>
-
-    </form>
-  </section>
-
-  <script src="script.js"></script>
-
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
