@@ -1,3 +1,8 @@
-.user-row{
-  border: 1px solid black;
+.main-container{
+  display: flex;
+  justify-content: space-between;
+}
+
+*{
+  margin: 5px;
 }
