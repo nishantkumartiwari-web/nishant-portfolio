@@ -83,7 +83,7 @@ export default function BasicModal() {
 
   return (
     <div>
-      <Button sx={{ width: 200 }} variant="contained" onClick={handleOpen}>
+      <Button sx={{ width: 150 }} variant="contained" onClick={handleOpen}>
         Add User
       </Button>
       <Modal

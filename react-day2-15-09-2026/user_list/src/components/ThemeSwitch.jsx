@@ -2,8 +2,8 @@ import { styled } from "@mui/material/styles";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import Switch from "@mui/material/Switch";
-import Stack from "@mui/material/Stack";
-import Typography from "@mui/material/Typography";
+import { useContext } from "react";
+import { AppContext } from "../../ContextAPI/AppContext";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   width: 62,
@@ -61,10 +61,18 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
   },
 }));
 
-export default function LightSwitch({ lightMode, setLightMode }) {
+export default function LightSwitch() {
+  const { setLightMode } = useContext(AppContext);
   return (
     <FormGroup>
-      <FormControlLabel control={<MaterialUISwitch onClick={()=>setLightMode(x=>!x)} sx={{ m: 1 }} />} />
+      <FormControlLabel
+        control={
+          <MaterialUISwitch
+            onClick={() => setLightMode((x) => !x)}
+            sx={{ m: 1 }}
+          />
+        }
+      />
     </FormGroup>
   );
 }
