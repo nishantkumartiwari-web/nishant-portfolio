@@ -5,6 +5,7 @@ import Home from "./Pages/Home";
 import Users from "./Pages/Users";
 import About from "./Pages/About";
 import AddUser from "./Pages/AddUser";
+import Tasks from "./Pages/Tasks";
 import CssBaseline from "@mui/material/CssBaseline";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout";
@@ -37,6 +38,7 @@ function App() {
               <Route path="users" element={<Userlist />}></Route>
               <Route path="about" element={<About />}></Route>
               <Route path="add-user" element={<AddUser />}></Route>
+              <Route path="tasks" element={<Tasks />}></Route>
               <Route path="*" element={<PageNotFound />}></Route>
             </Route>
           </Routes>

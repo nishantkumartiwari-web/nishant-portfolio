@@ -15,7 +15,7 @@ import AdbIcon from "@mui/icons-material/Adb";
 import LightSwitch from "./ThemeSwitch";
 import { Link } from "react-router-dom";
 
-const pages = ["home", "about", "users", "add user"];
+const pages = ["home", "about", "users", "add user", "tasks"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function ResponsiveAppBar() {
